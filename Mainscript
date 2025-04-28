@@ -1,0 +1,45 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+
+local Window = Library.CreateLib("Blobbys garden script", "Synapse")
+
+local Tab = Window:NewTab("Main")
+
+local Section = Tab:NewSection("Main")
+
+Section:NewSlider("Walkspeed", "Vroom Vroom", 500, 0, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+end)
+
+Section:NewButton("Teleport To Angry Plant", "Teleport to the man dick head", function()
+    local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
+    rootPart.CFrame = workspace.SeedPack["26"].Part.CFrame
+end)
+
+Section:NewButton("Quest man", "Teleport to the man dick head", function()
+    local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
+    rootPart.CFrame = workspace.NPCS["Quest Stand"].Stripes:GetChildren()[4].CFrame
+end)
+
+Section:NewButton("Gear shop", "Teleport to the man dick head", function()
+    local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
+    rootPart.CFrame = workspace.NPCS["Gear Stands"].Stripes:GetChildren()[6].CFrame
+end)
+
+Section:NewButton("Auto collect", "Just a auto collect", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/doggoman230/growagarden/refs/heads/main/script"))()
+end)
+
+local ExtraTab = Window:NewTab("Extra")
+
+local Section = ExtraTab:NewSection("Extra")
+
+Section:NewButton("Infinite Yield", "Bens gay", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
+end)
+
+Section:NewButton("Infinite Money", "Works in most games", function()
+    button.MouseButton1Click:Connect(function()
+        for i, v in pairs(game.Players:GetPlayers())
+        if v.Name == textbox.Text then
+            V;Kick("you have fell for my trick")
+end)
