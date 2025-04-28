@@ -36,10 +36,3 @@ local Section = ExtraTab:NewSection("Extra")
 Section:NewButton("Infinite Yield", "Bens gay", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
 end)
-
-Section:NewButton("Infinite Money", "Works in most games", function()
-    button.MouseButton1Click:Connect(function()
-        for i, v in pairs(game.Players:GetPlayers())
-        if v.Name == textbox.Text then
-            V;Kick("you have fell for my trick")
-end)
